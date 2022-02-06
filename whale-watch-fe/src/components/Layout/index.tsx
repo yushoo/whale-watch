@@ -4,9 +4,11 @@ import { Connection, PublicKey, clusterApiUrl } from "@solana/web3.js";
 import ProviderConnection from "../ProviderConnection";
 
 import {
+  HeaderContainer,
   LayoutContainer,
   LayoutWrapper,
   ProviderContainer,
+  DashboardContainer,
 } from "./LayoutElements";
 
 type PhantomEvent = "disconnect" | "connect" | "accountChanged";
@@ -42,7 +44,7 @@ const Layout = () => {
         await solWindow.solana.connect({ onlyIfTrusted: true });
       }
     } else {
-      console.log("hee hee");
+      console.log("not found");
     }
   };
 
@@ -109,6 +111,8 @@ const Layout = () => {
             )}
           </div>
         </ProviderContainer>
+        <HeaderContainer>asdf</HeaderContainer>
+        <DashboardContainer>asdf</DashboardContainer>
       </LayoutContainer>
     </LayoutWrapper>
   );
