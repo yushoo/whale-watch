@@ -29,15 +29,28 @@ export const ProviderContainer = styled.div`
 export const HeaderContainer = styled.div`
   display: flex;
   align-items: center;
-  background-color: gray;
-  height: 10%;
+  background-color: #d6d6d6;
+  height: 20%;
   width: 80%;
   margin: 20px 10px;
+  border-radius: 20px;
+  padding: 0px 20px 0px 20px;
 `;
 
 export const DashboardContainer = styled.div`
   display: flex;
-  background-color: blue;
+  align-items: center;
+  justify-content: center;
+  background-color: #39677a;
   height: 100%;
   width: 80%;
+  border-radius: 20px;
+  padding: 30px 20px 0px 20px;
+`;
+
+export const DashboardDisplay = styled.div`
+  background-color: #d6d6d6;
+  height: 80%;
+  width: 100%;
+  border-radius: 20px;
 `;

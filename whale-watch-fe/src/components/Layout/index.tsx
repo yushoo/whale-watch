@@ -9,6 +9,7 @@ import {
   LayoutWrapper,
   ProviderContainer,
   DashboardContainer,
+  DashboardDisplay,
 } from "./LayoutElements";
 
 type PhantomEvent = "disconnect" | "connect" | "accountChanged";
@@ -112,7 +113,9 @@ const Layout = () => {
           </div>
         </ProviderContainer>
         <HeaderContainer>asdf</HeaderContainer>
-        <DashboardContainer>asdf</DashboardContainer>
+        <DashboardContainer>
+          <DashboardDisplay></DashboardDisplay>
+        </DashboardContainer>
       </LayoutContainer>
     </LayoutWrapper>
   );
